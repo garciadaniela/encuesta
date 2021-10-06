@@ -1,0 +1,203 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Poppins-Regular, sans-serif;
+}
+/*---------------------------------------------*/
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #adadad;
+}
+input:-moz-placeholder {
+  color: #adadad;
+}
+input::-moz-placeholder {
+  color: #adadad;
+}
+input:-ms-input-placeholder {
+  color: #adadad;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #adadad;
+}
+textarea:-moz-placeholder {
+  color: #adadad;
+}
+textarea::-moz-placeholder {
+  color: #adadad;
+}
+textarea:-ms-input-placeholder {
+  color: #adadad;
+}
+
+/*---------------------------------------------*/
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+#form {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.wrap-contact100 {
+  width: 80%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 35%);
+}
+
+.contact100-form {
+  width: 100%;
+}
+#form h2 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 5.42px;
+  text-transform: uppercase;
+}
+#form h1 {
+  letter-spacing: 5.42px;
+  text-transform: uppercase;
+  font-family: Poppins-Bold, sans-serif;
+}
+#form input {
+  height: 33.97px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+#form select {
+  height: 33.97px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+#form textarea {
+  border: 1px solid #000;
+  border-radius: 0;
+}
+#form .bootstrap-select button {
+  height: 33.97px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+#form .btn-enviar {
+  width: 246px;
+  height: 36px;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 7.75px;
+  line-height: 18px;
+  background-color: black;
+  text-transform: uppercase;
+}
+#form .btn-enviar:hover {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 420px) {
+  .wrap-contact100 {
+    width: 90%;
+  }
+  #form h1 {
+    font-size: 27px;
+  }
+  #form h2 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 375px) {
+  .wrap-contact100 {
+    width: 100%;
+  }
+}
