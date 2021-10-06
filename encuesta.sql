@@ -29,9 +29,11 @@ CREATE TABLE IF NOT EXISTS `encuestas` (
   KEY `fk_idhobby` (`fk_idhobby`),
   CONSTRAINT `fk_idgenero` FOREIGN KEY (`fk_idgenero`) REFERENCES `generos` (`idgenero`),
   CONSTRAINT `fk_idhobby` FOREIGN KEY (`fk_idhobby`) REFERENCES `hobbies` (`idhobby`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
--- La exportación de datos fue deseleccionada.
+-- Volcando datos para la tabla encuesta.encuestas: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `encuestas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `encuestas` ENABLE KEYS */;
 
 -- Volcando estructura para tabla encuesta.generos
 CREATE TABLE IF NOT EXISTS `generos` (
@@ -40,7 +42,12 @@ CREATE TABLE IF NOT EXISTS `generos` (
   PRIMARY KEY (`idgenero`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
--- La exportación de datos fue deseleccionada.
+-- Volcando datos para la tabla encuesta.generos: ~2 rows (aproximadamente)
+/*!40000 ALTER TABLE `generos` DISABLE KEYS */;
+INSERT INTO `generos` (`idgenero`, `nombre`) VALUES
+	(1, 'Mujer'),
+	(2, 'Hombre');
+/*!40000 ALTER TABLE `generos` ENABLE KEYS */;
 
 -- Volcando estructura para tabla encuesta.hobbies
 CREATE TABLE IF NOT EXISTS `hobbies` (
@@ -49,7 +56,21 @@ CREATE TABLE IF NOT EXISTS `hobbies` (
   PRIMARY KEY (`idhobby`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
--- La exportación de datos fue deseleccionada.
+-- Volcando datos para la tabla encuesta.hobbies: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `hobbies` DISABLE KEYS */;
+INSERT INTO `hobbies` (`idhobby`, `nombre`) VALUES
+	(1, 'Ninguno'),
+	(2, 'Deporte'),
+	(3, 'Musical'),
+	(4, 'Cocina'),
+	(5, 'Literario'),
+	(6, 'Manualidades'),
+	(7, 'Juegos'),
+	(8, 'Modelismo'),
+	(9, 'Baile'),
+	(10, 'Cine'),
+	(11, 'Otro');
+/*!40000 ALTER TABLE `hobbies` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
