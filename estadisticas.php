@@ -14,10 +14,10 @@ if (isset($_GET['do']) && $_GET['do'] == 'cargarGraficos') {
     $array_dedicacion = $dato_dedicacion->estadisticasDedicacion();
 
     $cant_hombres = new Encuesta();
-    $cant_hombres->cantidadTotalPorGenero(Config::MUJER);
+    $cant_hombres->cantidadTotalPorGenero(Config::HOMBRE);
 
     $cant_mujeres = new Encuesta();
-    $cant_mujeres->cantidadTotalPorGenero(Config::HOMBRE);
+    $cant_mujeres->cantidadTotalPorGenero(Config::MUJER);
 
     $array_resultado = array(
         "data_hobby" => $array_hobby,
